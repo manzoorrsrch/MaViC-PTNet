@@ -24,7 +24,7 @@ data/
         ├── meningioma/
         ├── notumor/
         └── pituitary/
-2. For Simple performance evaluation run the "mavicFinalEvaluationV1.ipynb" file, by making required data path modifications
+2. For Simple performance evaluation run the "mavicFinalEvaluationV1.ipynb" file, After downloading saved weights of mavic_pt_best.pt, dataset,make required data path modifications in notebook
 3. Trained checkpoint
 
 The trained MaViC-PTNet checkpoint used in the paper is available on Google Drive:
