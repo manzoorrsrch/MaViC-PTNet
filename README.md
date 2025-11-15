@@ -24,8 +24,8 @@ data/
         ├── meningioma/
         ├── notumor/
         └── pituitary/
-
-2. Trained checkpoint
+2. For Simple performance evaluation run the "mavicFinalEvaluationV1.ipynb" file, by making required data path modifications
+3. Trained checkpoint
 
 The trained MaViC-PTNet checkpoint used in the paper is available on Google Drive:
 
@@ -36,16 +36,16 @@ Download this file and place it under:
 
 checkpoints/mavic_pt_best.pt
 
-3. Environment
+4. Environment
 pip install -r requirements.txt
 
-4. Duplicate removal
+5. Duplicate removal
 
 We detect cross-split near-duplicate images with perceptual hashing and SSIM and remove the test-side image when a near-duplicate pair spans train and test. The resulting removal list is stored as:
 
 data/cleaned_indices/near_duplicates_typeC_to_remove.txt
 
-5. Evaluation on the cleaned test set
+6. Evaluation on the cleaned test set
 python scripts/eval_mavic_pt_clean_test.py \
   --data_root data/brainMri \
   --remove_list data/cleaned_indices/near_duplicates_typeC_to_remove.txt \
